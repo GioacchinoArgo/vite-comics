@@ -91,6 +91,7 @@ ul li {
     margin: 1rem;
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 14px;
 }
 
 ul li a.active,
@@ -108,7 +109,7 @@ ul li a:active::after {
     display: block;
     position: absolute;
     left: 0;
-    top: 75px;
+    top: 73px;
 }
 
 nav {

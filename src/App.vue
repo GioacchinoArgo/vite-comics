@@ -1,17 +1,16 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
+import AppMain from './components/AppMain.vue'
 
 export default {
   name: 'ComicsApp',
-  components: {
-    AppHeader
-  }
+  components: { AppHeader, AppMain }
 }
 </script>
 
 <template>
   <AppHeader />
-  <main></main>
+  <AppMain />
   <footer></footer>
 </template>
 
@@ -35,5 +34,11 @@ a {
 
 body {
   font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+/* Utils */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 </style>
