@@ -15,33 +15,6 @@ export default {
   <AppFooter />
 </template>
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Generics */
-body {
-  height: 100vh;
-  background-color: #fff;
-  font-family: 'Encode Sans Condensed', sans-serif;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-/* Utils */
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
+<style lang="scss">
+@use './assets/scss/style.scss';
 </style>

@@ -77,83 +77,89 @@ export default {
     </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .upper-footer {
     background-image: url('../assets/img/footer-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 3rem 0;
+
+    .footer-row {
+        display: flex;
+        gap: 50px;
+
+        h2 {
+            margin-bottom: 1rem;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            line-height: 20px;
+
+            a {
+                list-style: none;
+                color: gray;
+                margin-bottom: 0.5rem;
+                font-size: 0.75rem;
+            }
+        }
+    }
 }
 
-.footer-row {
-    display: flex;
-    gap: 50px;
-}
-
-.footer-row .footer-col h2 {
-    margin-bottom: 1rem;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.footer-col ul li {
-    list-style: none;
-    line-height: 20px;
-}
-
-.footer-col ul li a {
-    list-style: none;
-    color: gray;
-    margin-bottom: 0.5rem;
-    font-size: 0.75rem;
-}
-
-.socials ul li span {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    margin: 0 5px;
-    font-weight: 800;
-    color: #0282F9;
-}
 
 .lower-footer {
     background-color: #303030;
     padding: 2rem 0;
+
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+            text-transform: uppercase;
+            font-size: 1rem;
+            padding: 0.8rem 1rem;
+            font-weight: 600;
+            border: 2px solid #0282F9;
+            background-color: #303030;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
 }
 
-.lower-footer .container .footer-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.socials {
+
+    span {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        margin: 0 5px;
+        font-weight: 800;
+        color: #0282F9;
+    }
 }
 
-.socials ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-}
+.socials {
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
 
-.socials ul li a i {
-    background-color: #797979;
-    width: 35px;
-    height: 35px;
-    font-size: 25px;
-    border-radius: 50%;
-    color: #303030;
-    text-align: center;
-    line-height: 35px;
-}
-
-button {
-    text-transform: uppercase;
-    font-size: 1rem;
-    padding: 0.8rem 1rem;
-    font-weight: 600;
-    border: 2px solid #0282F9;
-    background-color: #303030;
-    color: #fff;
-    cursor: pointer;
+        i {
+            background-color: #797979;
+            width: 35px;
+            height: 35px;
+            font-size: 25px;
+            border-radius: 50%;
+            color: #303030;
+            text-align: center;
+            line-height: 35px;
+        }
+    }
 }
 </style>

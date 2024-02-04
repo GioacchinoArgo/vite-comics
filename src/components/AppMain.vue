@@ -30,7 +30,7 @@ export default {
     </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 main {
     background-color: blue;
     color: #fff;
@@ -39,10 +39,10 @@ main {
 .upper-content {
     background-color: #1C1C1C;
     padding: 4rem 0;
-}
 
-.upper-content h1 {
-    font-size: 30px;
+    h1 {
+        font-size: 30px;
+    }
 }
 
 .mid-content {
@@ -50,31 +50,31 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
 
-.mid-content ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-}
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
 
-.mid-content ul li {
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 16px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    padding: 3rem;
-    cursor: pointer;
-}
+        li:last-child img {
+            height: 40px;
+        }
 
-.mid-content ul li img {
-    height: 60px;
-    margin-right: 10px;
-}
+        li {
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 16px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 3rem;
+            cursor: pointer;
 
-.mid-content ul li:last-child img {
-    height: 40px;
+            img {
+                height: 60px;
+                margin-right: 10px;
+            }
+        }
+    }
 }
 </style>

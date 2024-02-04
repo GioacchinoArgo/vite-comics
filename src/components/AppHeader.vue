@@ -73,47 +73,47 @@ export default {
     </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1rem 0;
-    background-color: #fff
-}
+    background-color: #fff;
 
-ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-}
+    nav {
+        display: flex;
 
-ul li {
-    margin: 1rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 14px;
-}
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
 
-ul li a.active,
-ul li a:active {
-    position: relative;
-    color: #0282F9;
-}
+            li {
+                margin: 1rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 14px;
+            }
 
-ul li a.active::after,
-ul li a:active::after {
-    content: '';
-    background-color: #0282F9;
-    height: 5px;
-    width: 100%;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 73px;
-}
+            li a.active,
+            li a:active {
+                position: relative;
+                color: #0282F9;
+            }
 
-nav {
-    display: flex;
+            li a.active::after,
+            li a:active::after {
+                content: '';
+                background-color: #0282F9;
+                height: 5px;
+                width: 100%;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 73px;
+            }
+        }
+    }
 }
 </style>
