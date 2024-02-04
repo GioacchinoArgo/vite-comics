@@ -14,16 +14,18 @@ export default {
         <section class="mid-content">
             <div class="container">
                 <ul>
-                    <li><img src="../assets/img/buy-comics-digital-comics.png" alt="">digital comics</li>
-                    <li><img src="../assets/img/buy-comics-merchandise.png" alt="">dc merchandise</li>
-                    <li><img src="../assets/img/buy-comics-subscriptions.png" alt="">subscription</li>
-                    <li><img src="../assets/img/buy-comics-shop-locator.png" alt="">comic shop locator</li>
-                    <li><img src="../assets/img/buy-dc-power-visa.svg" alt="">dc power visa</li>
+                    <li><img src="../assets/img/buy-comics-digital-comics.png">digital comics</li>
+                    <li><img src="../assets/img/buy-comics-merchandise.png">dc merchandise</li>
+                    <li><img src="../assets/img/buy-comics-subscriptions.png">subscription</li>
+                    <li><img src="../assets/img/buy-comics-shop-locator.png">comic shop locator</li>
+                    <li><img src="../assets/img/buy-dc-power-visa.svg">dc power visa</li>
                 </ul>
             </div>
         </section>
         <section class="lower-content">
+            <div class="container">
 
+            </div>
         </section>
     </main>
 </template>
@@ -36,7 +38,7 @@ main {
 
 .upper-content {
     background-color: #1C1C1C;
-    padding: 1.5rem 0;
+    padding: 4rem 0;
 }
 
 .upper-content h1 {
@@ -48,7 +50,6 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 3rem 0;
 }
 
 .mid-content ul {
@@ -64,11 +65,16 @@ main {
     color: #fff;
     display: flex;
     align-items: center;
-    margin: 1rem;
+    padding: 3rem;
+    cursor: pointer;
 }
 
 .mid-content ul li img {
-    margin: 0 .50rem 0 0;
-    height: 50%;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.mid-content ul li:last-child img {
+    height: 40px;
 }
 </style>

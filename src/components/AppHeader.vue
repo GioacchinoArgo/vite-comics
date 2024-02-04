@@ -78,7 +78,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 140px;
+    padding: 1rem 0;
+    background-color: #fff
 }
 
 ul {
